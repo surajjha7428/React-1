@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script>
+    let main = React.createElement("div", {
+        style: {
+            backgroundColor: "rgb(255,228,196)",
+             border: "0px solid red",
+            display: "flex",
+            // paddingLeft:"35%",
+            // gap:"20px",
+            gap:"3%",
+            marginTop:"10%",
+             padding: "2% 0% 2% 32%"
+
+             
+        },
+        children: [
+            React.createElement("div", {
+                style: {
+                    border: "0px solid red",
+                    backgroundColor: "red",
+                    padding: "12px",
+                   
+                    
+                }
+            }, "child 1"),
+            React.createElement("div", {
+                style: {
+                    border: "0px solid red",
+                    backgroundColor: "yellow",
+                    padding: "20px",
+                   
+
+                }
+            }, "child 2"),
+            React.createElement("div", {
+                style: {
+                    border: "0px solid red",
+                    backgroundColor: "green",
+                    padding: "20px",
+                    
+                }
+            }, "child 3"),
+            React.createElement("div", {
+                style: {
+                    border: "0px solid red",
+                    backgroundColor: "pink",
+                    padding: "20px",
+                    
+                }
+            }, "child 4")
+        ],
+    },);
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(main);
+</script>
+
+</html>
